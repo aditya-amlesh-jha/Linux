@@ -1,0 +1,16 @@
+RAM: volatile storage used for computation, easy access
+HDD/SSD : permanent storage used for strong files
+
+EXT3 -> journal of changes in file
+
+Why linux is safe:
+Needs administrator password for system level operations
+regular Updates for OS+packages
+less market space, hence less virus attacks
+
+
+RBAC: role based access control
+
+Kernel
+Virtual File System
+Storage Journals: EXT3, EXT4, NTFS

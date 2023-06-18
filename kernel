@@ -1,0 +1,8 @@
+Kernel: part of OS that has full control over everything in the system
+		each operation of hardware and software is managed by kernel
+		acts as bridge between applications and data processing done at hardware level
+		resides in computer memory(first program to bootup)
+		loaded into separate memory space called protected Kernel space
+		
+Functions:
+	Device management

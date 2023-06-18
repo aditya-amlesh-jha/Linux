@@ -1,0 +1,97 @@
+********************************GREP**************************************
+To search for a content inside a given file
+grep "content" file_name
+
+format:
+grep [options] pattern [files]
+
+Options: 
+-i: case insensitive
+grep -i content file_name
+
+-v: print all the lines in which there is no match
+grep -v "content" file_name
+
+-w: case by case
+grep -w "content" file_name
+
+-c: count lines where pattern is matched
+grep -c "content" file_name
+
+-wc: count freq of pattern
+grep -wc "content" file_name
+
+
+
+********************************FIND**************************************
+To search for a file with given extension in a folder
+find /folder -name "*.txt'
+find /folder -size +1M ; size can be variable
+
+
+********************************FALLOCATE**************************************
+To make a garbage file of specified size
+fallocate -l size(1G/1M) test.img
+
+
+********************************CREATE**************************************
+To create a file : 
+cat/touch file_name
+
+
+********************************REMOVE**************************************
+To remove a file
+rm -f file_name
+
+To remove a folder
+rm -r folder_name
+
+
+********************************SORT**************************************
+Sort contents of a file
+sort file_name
+
+Sort in reverse order
+sort -r file_name
+
+Sort with numeric data present inside file
+sort -n file_name
+sort -nr file_name
+
+Let's suppose a file has multiple columns, to sort on kth column
+sort -k 1 file_name ;this will sort the files on basis of 1st column
+
+To sort and store results in a new file
+sort -o output_file input_file
+
+
+********************************SED**************************************
+
+********************************COPY**************************************
+cp src_file dest_file
+cp src_file $dest_file ;incase dest_file is a shell variable
+
+********************************PERMISSIONS**************************************
+chmod ugo/a/o/g/u +/- r/w/x file_name
+where ugo means for all
+	  a means for all
+	  o - others
+	  g - groups
+	  u - users
+	  
+	  + - add permissions
+	  - - remove permissions
+	  
+	  r - read
+	  w - write
+	  x - executable
+
+********************************CHECK SIZE**************************************
+du -sh /folder
+-sh ; s - summarize, h - human interpretable
+
+
+********************************DOWNLOAD FILE**************************************
+wget url
+curl -o directory/output_name url
+

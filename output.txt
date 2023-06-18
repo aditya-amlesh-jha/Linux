@@ -1,0 +1,9 @@
+Aditya,2
+Apple,1
+Lava,1
+Micromax,1
+Motorola,1
+Realme,1
+Samsung,1
+Xiaomi,1
+word,freq

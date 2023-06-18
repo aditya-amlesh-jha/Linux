@@ -1,0 +1,106 @@
+https://www.hackerrank.com/challenges/bash-tutorials---comparing-numbers/problem?isFullScreen=true
+read A
+read B
+
+if [ "$A" -eq "$B" ]; then
+    echo "X is equal to Y"
+elif [ "$A" -gt "$B" ]; then
+    echo "X is greater than Y"
+else
+    echo "X is less than Y"
+fi
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/bash-tutorials---getting-started-with-conditionals/problem?isFullScreen=true
+
+read C
+
+case "$C" in
+    "Y" | "y")
+        echo "YES"
+        ;;
+    "N" | "n")
+        echo "NO"
+        ;;
+esac
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/bash-tutorials---more-on-conditionals/problem?isFullScreen=true
+
+read a
+read b
+read c
+
+if [ "$a" -eq "$b" -a "$b" -eq "$c" ]; then
+    echo "EQUILATERAL"
+elif [ "$a" -eq "$b" -o "$b" -eq "$c" -o "$c" -eq "$a" ]; then
+    echo "ISOSCELES"
+else
+    echo "SCALENE"
+fi
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/bash-tutorials---arithmetic-operations/problem?isFullScreen=true
+
+read exp
+
+result=$(echo "scale=4; $exp" | bc)
+printf "%.3f" $result
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/bash-tutorials---compute-the-average/problem?isFullScreen=true
+
+read N
+
+result=0
+
+for ((i=1; i<=N; i++))
+do
+    read temp
+    ((result+=temp))
+done
+
+result=$(bc <<< "scale=3; $result / $N")
+printf "%.3f" "$result"
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-1/problem?isFullScreen=true
+
+grep " the "
+grep -w 'the'
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-2/problem?isFullScreen=true
+
+grep -iw 'the'
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-3/problem?isFullScreen=true
+
+grep -viw 'that'
+
+**************************************************************************************
+https://www.hackerrank.com/challenges/text-processing-in-linux-the-grep-command-4/problem?isFullScreen=true
+
+grep -iw "the\|that\|then\|those"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
