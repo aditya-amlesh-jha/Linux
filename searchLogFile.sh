@@ -7,6 +7,7 @@ if [ $# -eq 1 ]; then
     root_dir="$1"
 else
     read -p "Enter the root directory: " root_dir
+fi
 
 # checking if directory exists
 # if this does not exist, then exit from the program
@@ -14,7 +15,7 @@ else
 if [ ! -d "$root_dir" ]; then
     echo "Directory '$root_dir' does not exist, exiting....."
     exit 1
-
+fi
 
 # search function to find keyword
 search_for_error(){
@@ -34,4 +35,4 @@ search_for_error "$root_dir"
 
 for sub_dir in "$root_dir"/*/; do
     seach_for_error "$sub_dir"
-done
+donecat 
