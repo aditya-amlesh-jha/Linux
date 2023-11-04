@@ -24,7 +24,7 @@ search_for_error(){
     recent_log_files=$(echo "$log_files" | head -n 3)
 
     for log_file in $recent_log_files; do
-        echo "Seachinf for 'error' in $log_file:"
+        echo "Seaching for 'error' in $log_file:"
         grep -i "error" "$log_file"
         echo "---------------------------------------------"
     done  
@@ -34,5 +34,5 @@ search_for_error(){
 search_for_error "$root_dir"
 
 for sub_dir in "$root_dir"/*/; do
-    seach_for_error "$sub_dir"
-donecat 
+    search_for_error "$sub_dir"
+done 
