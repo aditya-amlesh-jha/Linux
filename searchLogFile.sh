@@ -35,4 +35,3 @@ search_for_error "$root_dir"
 for sub_dir in "$root_dir"/*/; do
     seach_for_error "$sub_dir"
 done
-
