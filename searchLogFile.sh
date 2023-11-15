@@ -25,7 +25,7 @@ search_for_error(){
 
     for log_file in $recent_log_files; do
         echo "Seaching for 'error' in $log_file:"
-        grep -i "error" "$log_file"
+        grep -A 5 -B 5 -i "error" "$log_file"
         echo "---------------------------------------------"
     done  
 }
